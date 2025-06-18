@@ -99,13 +99,16 @@ To adhere to the DRY (Don't Repeat Yourself) principle and ensure the code is ma
 
 The following table details the 5 training instances required by the assignment, showing the different combinations of hyperparameters used for the CNN and the resulting performance on the **validation set**.
 
-| Training Instance | Optimizer | Learning Rate | Dropout Rate | Regularizer | Epochs (Stopped) | Validation Accuracy | Validation Precision | Validation Recall | Validation F1-score |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Instance 1 (Baseline)** | RMSprop | 0.001 | 0.0 | None | 15 | 71.13% | 71.90% | 66.22% | 64.67% |
-| **Instance 2** | Adam | 0.001 | 0.5 | L2 (0.01) | 34 | 95.49% | 89.67% | 85.04% | 86.08% |
-| **Instance 3** | RMSprop | 0.001 | 0.2 | L1 (0.01) | 7 | 54.08% | 43.33% | 45.02% | 42.02% |
-| **Instance 4** | SGD | 0.001 | 0.4 | None | 22 | 31.41% | 5.23% | 16.67% | 7.97% |
-| **Instance 5 (Best)** | **Adam** | **0.0001** | **0.5** | **L2 (0.01)** | **39** | **96.20%** | **97.14%** | **83.68%** | **85.38%** |
+| Training Instance | Optimizer | Learning Rate | Dropout Rate | Regularizer Used | Epochs (Stopped) | Number of Dense Layers | Validation Accuracy | Validation F1-score | Validation Recall | Validation Precision |
+| :--- | :--- | :--- | :--- | :--- | :--- |:--- |:--- |:--- |:--- |:--- |
+| **Instance 1 (Baseline)** | RMSprop (default) | 0.001 | 0.0 | None | 15 (Fixed) | 1 | 71.13% | 64.67% | 66.22% | 71.90% |
+| **Instance 2** | Adam | 0.001 | 0.5 | L2 (0.01) | 34 | 1 | 95.49% | 86.08% | 85.04% | 89.67% |
+| **Instance 3** | RMSprop | 0.001 | 0.2 | L1 (0.01) | 7 | 1 | 54.08% | 42.02% | 45.02% | 43.33% |
+| **Instance 4** | SGD | 0.001 | 0.4 | None | 22 | 1 | 31.41% | 7.97% | 16.67% | 5.23% |
+| **Instance 5 (Best)** | **Adam** | **0.0001** | **0.5** | **L2 (0.01)** | **39** | **1** | **96.20%** | **85.38%** | **83.68%** | **97.14%** |
+
+*Note: The "Number of Dense Layers" column refers to the hidden (fully connected) layers in the architecture, which was kept constant at 1 layer with 128 neurons for these experiments.*
+
 
 #### **Analysis of Results & Key Findings**
 
