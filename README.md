@@ -1,5 +1,9 @@
 # Rinda Project: Plant Disease Classification using Machine Learning
 
+### Problem Statement
+
+Smallholder farmers in Rwanda face significant and preventable crop losses, estimated to be between 26% and 36% for key staple crops like potatoes and cassava, primarily due to pests and diseases. This issue directly threatens the livelihoods of a majority of the population and undermines national food security. The current methods for identifying and managing these crop health threats rely on manual inspection and traditional extension services, which are often too slow, inaccessible, or lack the diagnostic accuracy needed for timely and effective intervention. This results in delayed treatment, reduced yields, and inefficient use of resources, creating a critical need for a more accessible and precise decision-making tool for farmers.
+
 ### **Project Overview**
 
 This project explores the implementation and optimization of machine learning models for a multi-class image classification task. The objective is to accurately identify various diseases in plants from leaf images. We compare the performance of a classical algorithm (Support Vector Machine) against several iterations of a Convolutional Neural Network (CNN), applying various optimization techniques to improve the model's accuracy, generalization, and efficiency.
@@ -14,7 +18,9 @@ The dataset used for this project is the **PlantVillage Dataset**, a rich public
 * **Characteristics:**
     * **Volume:** Contains over 54,000 images.
     * **Variety:** The full dataset includes 38 distinct classes representing different plant species and their diseases (or healthy status). For this project, a subset of 6 classes was used to manage computational resources.
-    * **Challenge:** During Exploratory Data Analysis (EDA), a significant **class imbalance** was identified, with some classes having far more images than others. This was a key consideration during model training, as it can bias the model towards majority classes.
+    * **Challenge:** 
+      * During Exploratory Data Analysis (EDA), a significant **class imbalance** was identified, with some classes having far more images than others. This was a key consideration during model training, as it can bias the model towards majority classes.
+      * The Dataset is also enormous which caused the **initial training to last more than 20 hours**, this led to the decision of reducing the dataset to plants and diseases that are most relevant to Rwanda.
 
 ---
 
@@ -41,16 +47,11 @@ pip install tensorflow scikit-learn numpy seaborn matplotlib joblib
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-project-name.git](https://github.com/your-username/your-project-name.git)
-    cd your-project-name
+    git clone [the repository](https://github.com/Christianib003/rinda-project)
+    cd rinda-project
     ```
 
-2.  **Download the Dataset:**
-    * Download the dataset from [Kaggle](https://www.kaggle.com/datasets/emmarex/plantdisease).
-    * Create a `data/` directory in the project's root.
-    * Unzip the dataset and ensure the training and validation images are located at `data/PlantVillage/train` and `data/PlantVillage/val` respectively.
-
-3.  **Run the Notebook:**
+2.  **Run the Notebook:**
     * Open and run the `notebook.ipynb` file in a Jupyter environment. The notebook contains all the code for data preprocessing, model training, and evaluation.
 
 ---
