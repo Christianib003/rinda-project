@@ -14,7 +14,9 @@ The dataset used for this project is the **PlantVillage Dataset**, a rich public
 * **Characteristics:**
     * **Volume:** Contains over 54,000 images.
     * **Variety:** The full dataset includes 38 distinct classes representing different plant species and their diseases (or healthy status). For this project, a subset of 6 classes was used to manage computational resources.
-    * **Challenge:** During Exploratory Data Analysis (EDA), a significant **class imbalance** was identified, with some classes having far more images than others. This was a key consideration during model training, as it can bias the model towards majority classes.
+    * **Challenge:** 
+      * During Exploratory Data Analysis (EDA), a significant **class imbalance** was identified, with some classes having far more images than others. This was a key consideration during model training, as it can bias the model towards majority classes.
+      * The Dataset is also enormous which caused the **initial training to last more than 20 hours**, this led to the decision of reducing the dataset to plants and diseases that are most relevant to Rwanda.
 
 ---
 
