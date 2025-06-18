@@ -1,5 +1,7 @@
 # Rinda Project: Plant Disease Classification using Machine Learning
 
+[Video Description of The Project](https://youtu.be/654ux5lzqjQ)
+
 ### Problem Statement
 
 Smallholder farmers in Rwanda face significant and preventable crop losses, estimated to be between 26% and 36% for key staple crops like potatoes and cassava, primarily due to pests and diseases. This issue directly threatens the livelihoods of a majority of the population and undermines national food security. The current methods for identifying and managing these crop health threats rely on manual inspection and traditional extension services, which are often too slow, inaccessible, or lack the diagnostic accuracy needed for timely and effective intervention. This results in delayed treatment, reduced yields, and inefficient use of resources, creating a critical need for a more accessible and precise decision-making tool for farmers.
