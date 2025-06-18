@@ -1,5 +1,5 @@
 # Ignore python environment
 .venv/
 
-# Ignore datasets
-data/
+# unncessary files
+ignore/
