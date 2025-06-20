@@ -10,7 +10,7 @@ Smallholder farmers in Rwanda face significant and preventable crop losses, esti
 
 This project explores the implementation and optimization of machine learning models for a multi-class image classification task. The objective is to accurately identify various diseases in plants from leaf images. We compare the performance of a classical algorithm (Support Vector Machine) against several iterations of a Convolutional Neural Network (CNN), applying various optimization techniques to improve the model's accuracy, generalization, and efficiency.
 
----
+
 
 ### **Dataset**
 
@@ -24,7 +24,7 @@ The dataset used for this project is the **PlantVillage Dataset**, a rich public
       * During Exploratory Data Analysis (EDA), a significant **class imbalance** was identified, with some classes having far more images than others. This was a key consideration during model training, as it can bias the model towards majority classes.
       * The Dataset is also enormous which caused the **initial training to last more than 20 hours**, this led to the decision of reducing the dataset to plants and diseases that are most relevant to Rwanda.
 
----
+
 
 ### **Getting Started**
 
@@ -56,7 +56,7 @@ pip install tensorflow scikit-learn numpy seaborn matplotlib joblib
 2.  **Run the Notebook:**
     * Open and run the `notebook.ipynb` file in a Jupyter environment. The notebook contains all the code for data preprocessing, model training, and evaluation.
 
----
+
 
 ### **Implementation Choices & Methodology**
 
@@ -93,7 +93,7 @@ To adhere to the DRY (Don't Repeat Yourself) principle and ensure the code is ma
 * `plot_training_history()`: To visualize the model's learning curves.
 * `build_cnn_model()`: A flexible function to build CNNs with varying optimization hyperparameters.
 
----
+
 
 ### **Results and Discussion**
 
@@ -117,7 +117,7 @@ The following table details the 5 training instances required by the assignment,
 
 * **Fine-Tuning for Best Performance:** Instance 5 was a fine-tuning of our best model (Instance 2). By reducing the learning rate from `0.001` to `0.0001`, the model was able to converge more precisely, achieving the **highest validation accuracy of 96.20%**.
 
----
+
 
 ### **Final Model Comparison**
 
@@ -136,7 +136,7 @@ The **Convolutional Neural Network (CNN) was overwhelmingly superior** to the Su
 * The best CNN achieved a test accuracy of **96.2%**, more than double the SVM's accuracy of **49.15%**.
 * This result is expected for image classification tasks. CNNs are specifically designed to learn spatial features like textures, shapes, and patterns directly from image pixels. In contrast, the classical SVM, even with preprocessing, struggles to interpret the high-dimensional feature space of flattened images effectively.
 
----
+
 
 ### **How to Load the Best Model**
 
