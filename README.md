@@ -1,6 +1,6 @@
 # Rinda Project: Plant Disease Classification using Machine Learning
 
-[Video Description of The Project](https://youtu.be/654ux5lzqjQ)
+[Video Description of The Project](https://youtu.be/x0EiqhDlbHE)
 
 ### Problem Statement
 
